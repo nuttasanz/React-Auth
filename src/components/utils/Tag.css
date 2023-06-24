@@ -1,0 +1,22 @@
+.tag-wrapper {
+  display: flex;
+  gap: 12px;
+  background-color: #f7f1ff;
+  padding: 8px 16px;
+  width: fit-content;
+  border-radius: 20px;
+  color: #722ed1;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.tag-wrapper img {
+    max-width: 26px;
+}
+
+.tag-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

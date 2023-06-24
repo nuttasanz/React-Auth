@@ -1,0 +1,115 @@
+.bgImage2 {
+  background-image: linear-gradient(#f9f0ff 0%, #e2f1ff 100%);
+  clip-path: polygon(0% 20%, 100% 0%, 100% 80%, 0% 100%);
+  padding: 200px 240px 172px;
+}
+
+.content4-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  gap: 32px;
+}
+
+.content4-header {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 32px;
+  max-width: 964px;
+}
+.content4-text {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.profile-image-wrapper {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.profile-image-wrapper img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.logo-wrapper {
+  display: flex;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  gap: 91px;
+}
+.tonkean {
+  max-width: 144px;
+  max-height: 38px;
+}
+
+.tonkean img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.bigspring {
+  max-width: 151px;
+  max-height: 31px;
+}
+
+.bigspring img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.clearbit {
+  max-width: 111px;
+  max-height: 29px;
+}
+
+.clearbit img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.mine {
+  max-width: 85px;
+  max-height: 29px;
+}
+
+.mine img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.shake {
+  max-width: 86px;
+  max-height: 29px;
+}
+
+.shake img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 1280px) {
+  .bgImage2 {
+    padding: 200px 80px 172px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .bgImage2 {
+    padding: 300px 20px;
+  }
+  .logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    gap: 91px;
+  }
+}

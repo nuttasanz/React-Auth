@@ -1,0 +1,143 @@
+.footer-wrapper {
+  display: flex;
+  gap: 40px;
+}
+
+.logo {
+  max-width: 48px;
+  max-height: 48px;
+  margin-bottom: 14px;
+}
+
+.logo img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer-detail {
+  max-width: 209px;
+}
+
+.footer-text {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #160637;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.social-media {
+  max-width: 76px;
+  max-height: 16px;
+  margin-top: 16px;
+}
+
+.social-media img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer-menu-title {
+  color: #160637;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.mailto {
+  position: relative;
+}
+
+.mailto input {
+  width: 100%;
+  max-width: 180px;
+  max-height: 40px;
+  border: none;
+  border-radius: 4px;
+  padding: 16px;
+  padding-right: 32px;
+  box-sizing: border-box;
+  outline: none;
+  box-shadow: 4px 4px 12px 0px rgba(137, 137, 162, 0.12);
+}
+
+.mailto input::placeholder {
+  font-size: 12px;
+  font-weight: 500px;
+}
+
+.send-icon {
+  max-width: 20px;
+  max-height: 20px;
+  margin: auto;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.send-icon img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 240px 23px;
+  background-color: #fbfcff;
+}
+
+.footer-name {
+  margin-top: 60px;
+  text-align: center;
+  color: #160637;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.image7 {
+  max-width: 24px;
+  max-height: 24px;
+}
+
+.image7 img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer-menu{
+  display: flex;
+  gap: 40px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .footer-column {
+    padding: 60px 80px 23px;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer-wrapper{
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .footer-column{
+    padding: 60px 20px 23px;
+  }
+  .footer-menu{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,41 @@
+.nav{
+    padding: 20px 0px 100px;
+}
+.logo1{
+    max-width: 48px;
+    max-height: 48px;
+    position: absolute;
+}
+.nav-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 40px; 
+}
+
+.nav-menu div{
+    cursor: pointer;
+}
+
+.nav-button{
+    border: #722ED1 solid 1px;
+    border-radius: 23px;
+    padding: 12px 24px;
+    color: #722ED1;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: white;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 640px){
+    .nav-menu{
+        display: none;
+    }
+  }
