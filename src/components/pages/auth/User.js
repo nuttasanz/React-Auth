@@ -31,7 +31,7 @@ const User = () => {
         console.log(result);
       })
       .catch((error) => console.log("error", error));
-  }, []);
+  }, [navigate]);
 
   const logout = () => {
     localStorage.removeItem("token");
@@ -62,21 +62,11 @@ const User = () => {
                 <span>Email :</span> {user.email}
               </div>
             </div>
-            <button className="button1" onClick={logout}>Logout</button>
+            <button className="button1" onClick={logout}>
+              Logout
+            </button>
           </div>
         </div>
-        // <div>
-        //   <div>User Interface</div>
-        //   <div>{user.fname}</div>
-        //   <div>{user.lname}</div>
-        //   <div>{user.email}</div>
-        //   <div>
-        //     <img src={user.avatar} alt="avatar" />
-        //   </div>
-        //   <div>
-        //     <button onClick={logout}>Logout</button>
-        //   </div>
-        // </div>
       )}
     </div>
   );
