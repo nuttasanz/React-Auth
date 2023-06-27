@@ -5,29 +5,31 @@ const RegisterFrom = () => {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   const [confirm, setConfirm] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
 
   const handleSubmit = (e) => {
     if (pass === confirm && pass !== "") {
       e.preventDefault();
       var myHeaders = new Headers();
       myHeaders.append("Content-Type", "application/json");
-  
+
       var raw = JSON.stringify({
-        fname: email,
-        lname: email,
+        fname: firstName,
+        lname: lastName,
         username: email,
         password: pass,
         email: email,
         avatar: "https://www.melivecode.com/users/cat.png",
       });
-  
+
       var requestOptions = {
         method: "POST",
         headers: myHeaders,
         body: raw,
         redirect: "follow",
       };
-  
+
       fetch("https://www.melivecode.com/api/users/create", requestOptions)
         .then((response) => response.json())
         .then((result) => {
@@ -40,8 +42,8 @@ const RegisterFrom = () => {
           console.log(result);
         })
         .catch((error) => console.log("error", error));
-    }else{
-      alert('กรุรากรอก Password ให้ตรงกัน')
+    } else {
+      alert("กรุรากรอก Password ให้ตรงกัน");
     }
   };
   return (
@@ -49,6 +51,18 @@ const RegisterFrom = () => {
       <button type="submit" className="free-trial">
         Start your free trial
       </button>
+      <input
+        value={firstName}
+        onChange={(e) => setFirstName(e.target.value)}
+        type="text"
+        placeholder="Your First Name"
+      />
+      <input
+        value={lastName}
+        onChange={(e) => setLastName(e.target.value)}
+        type="text"
+        placeholder="Your First Name"
+      />
       <input
         value={email}
         onChange={(e) => setEmail(e.target.value)}
